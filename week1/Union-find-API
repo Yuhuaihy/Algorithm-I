@@ -1,0 +1,12 @@
+Find query. Check if two objects are in the same component
+Union command. Replace components containing two objects with their union
+
+API
+Goal: design efficient data structure for union-find
+objects N is huge
+operations M is huge
+
+public class UF
+UF(int N)    // initialize union-find data structure with N objects
+void union(int p, int q)  //add connection
+boolean connected(int p, int q) // are p and q in the same component?
