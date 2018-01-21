@@ -35,3 +35,5 @@ public class QuickFindUF{
         }
     }
 }
+// find: 1 union: n initilize:n
+// for N objects and N unions, complexity O(N^2), too expensive
