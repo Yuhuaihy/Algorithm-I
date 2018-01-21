@@ -5,7 +5,7 @@ public class QuickFindUF{
     QuickFindUF(int n){
         id = new int[n];
         for (int i = 0;i<n;i++){
-            id[i] = i;  
+            id[i] = i;  // n array accesses
         }        
     }
     void union(int p, int q){
@@ -14,16 +14,13 @@ public class QuickFindUF{
         int n = id[p];
         for(int i = 0; i < id.length;i++){
             if(id[i] == n)
-                id[i] = m;
+                id[i] = m;    // max 2n+2 array accesses
         }   
     }
     boolean connected(int p, int q)
     {
-        if (id[p]==id[q]){
-            return true;
-        }
-        else
-            return false;
+        return id[p]==id[q] //2 array accesses
+
     }
     public static void main(String[] args){
         int n = StdIn.readInt();
