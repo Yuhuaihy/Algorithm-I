@@ -1,0 +1,16 @@
+Data structure.
+・Integer array id[] of length N.
+・Interpretation: p and q are connected iff they have the same id.
+
+     0123456789
+id[]:0118800188
+id[0] = id[5] = id[6]
+
+Find. 
+Check if p and q have the same id.
+id[6] = 0;id[1] = 1 6 and 1 are not connected
+
+Union. 
+To merge components containing p and q, change all entries whose id equals id[p] to id[q].
+so if union 1,6
+need change 1,2,7
