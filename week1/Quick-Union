@@ -1,0 +1,16 @@
+Data Structure:
+Integer array id[] of length N. 
+Interpretation: id[i] is parent of i. ・
+Root of i is id[id[id[...id[i]...]]]
+
+like a tree
+0123456789
+0194966789
+root points to itself
+the parent of 2 is 9, root of 2 is 9 
+
+Find: have same root
+
+Union:
+union(p,q) set p's root points to q's root  ( change one value in the array)
+
