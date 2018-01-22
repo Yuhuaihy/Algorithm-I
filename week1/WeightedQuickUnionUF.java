@@ -2,6 +2,36 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 public class WeightedQuickUnionUF{
     int[] id;
+    // no need to return int[]
+//      int[] sz;
+//     WeightedQuickUnionUF(int n){
+//         id = new int[n];
+//         sz = new int[n];
+//         for(int i = 0; i< n ; i++){
+//             id[i] = i;
+//             sz[i] = 1;
+//         } 
+//     }
+//     int findRoot(int p){
+//         int num = 1;
+//         int q = p;
+//         while(id[q] != q){
+//             q = id[q]; 
+//             num +=1;
+//         }
+//         sz[p] = num;
+//         return q;
+//     }
+//     void union(int p, int q){
+//         int m = findRoot(p);
+//         int n = findRoot(q);
+//         if (sz[p] < sz[q])
+//             id[m] = n;
+//         else
+//             id[n] = m;
+     
+//     }
+    
     WeightedQuickUnionUF(int n){
         id = new int[n];
         for(int i = 0; i< n ; i++){
