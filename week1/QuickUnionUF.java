@@ -3,19 +3,19 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 public class QuickUnionUF{
     int[] id;
-    QuickUnionUF(int n){
+    QuickUnionUF(int n){   // initilize N
         id = new int[n];
         for(int i = 0; i< n ; i++){
             id[i] = i;
         } 
     }
-    int findRoot(int p){
+    int findRoot(int p){ // find  n
         while(id[p] != p){
             p = id[p];    
         }
         return p;
     }
-    void union(int p, int q){
+    void union(int p, int q){ // union n+
         int m = findRoot(p);
         int n = findRoot(q);
         id[m] = n;
