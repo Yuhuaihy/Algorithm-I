@@ -1,0 +1,9 @@
+Quick union with path compression. 
+Just after computing the root of p, set the id of each examined node to point to that root.
+
+Two-pass implementation: 
+add second loop to root() to set the id[] of each examined node to the root.
+
+
+Simpler one-pass variant: 
+Make every other node in path point to its grandparent (thereby halving path length).
