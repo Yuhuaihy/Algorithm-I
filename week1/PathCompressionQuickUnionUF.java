@@ -38,3 +38,6 @@ public class PathCompressionQuickUnionUF{
         }
     }
 }
+//weighted QU + path compression
+//N + M lg* N
+//M union-find operations on a set of N objects
