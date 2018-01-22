@@ -38,7 +38,7 @@ public class WeightedQuickUnionUF{
             id[i] = i;
         } 
     }
-    int[] findRoot(int p){
+    int[] findRoot(int p){    // find lgN
         int[] result;
         result = new int[2];
         int num = 1;
@@ -50,7 +50,7 @@ public class WeightedQuickUnionUF{
         result[1] = num;
         return result;
     }
-    void union(int p, int q){
+    void union(int p, int q){    // union  lgN+
         int[] m = findRoot(p);
         int[] n = findRoot(q);
         if (m[1]<n[1])
